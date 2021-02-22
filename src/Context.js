@@ -27,7 +27,6 @@ function ContextProvider({children}) {
     function addToCart(newItem) {
         setCartItems(prevItems => [...prevItems, newItem])
     }
-    console.log(cartItems)
 
     function removeFromCart(id) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
